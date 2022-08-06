@@ -51,6 +51,9 @@ map <leader>s :setlocal spell! spelllang=en_nz<CR>
 " Copies the contents of the entire file to clipboard
 nnoremap <leader>ya <esc>:%y+<CR>
 
+" Open .vimrc in a new tab
+nnoremap <leader>v <esc>:tabe ~/.vimrc <CR>
+
 " File explorer
 inoremap <c-f> <Esc>:Lex<cr>:vertical resize 30<cr>
 nnoremap <c-f> <Esc>:Lex<cr>:vertical resize 30<cr>
