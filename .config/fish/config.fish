@@ -43,6 +43,12 @@ set -U fish_pager_color_completion normal
 set -U fish_pager_color_description brblack
 set -U fish_pager_color_selected_background --reverse
 
+# Abbreviations
+abbr clone="git clone --depth 1" 
+abbr m="man"
+abbr pdw="pwd"
+abbr cd..='cd ..'
+
 # Aliases 
 alias q="exit"
 alias c="clear"
@@ -55,6 +61,7 @@ alias .3="cd ../../.."
 alias .4="cd ../../../.."
 alias .5="cd ../../../../.."
 
+alias g="git"
 alias s="ncdu"
 alias n="newsboat"
 alias e="$EDITOR"
