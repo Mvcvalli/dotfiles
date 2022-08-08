@@ -18,6 +18,7 @@ set noswapfile 		           " Disable swap files.
 set termguicolors 		   " Set term gui colors (most terminals support this)
 set t_Co=256                       " Set if term supports 256 colors.
 set ttyfast			   " Smoother Vim for some terminals.
+set wildoptions=pum		   " Vertical wildmenu
 
 " KEYBINDINGS
 
