@@ -71,3 +71,8 @@ alias fm="$FILE"
 alias ls="exa -a --color=always --icons --group-directories-first"
 alias ll="exa -la --color=always --icons --group-directories-first"
 alias tree="exa -a --color=always --icons --group-directories-first -T"
+
+alias .dots="git clone --depth 1 https://github.com/Mvcvalli/dotfiles.git" 
+alias .nvim="git clone --depth 1 https://github.com/Mvcvalli/nvim.git" 
+alias .zsh="git clone --depth 1 https://github.com/Mvcvalli/zsh.git"
+alias .scripts="git clone --depth 1 https://github.com/Mvcvalli/scripts.git"
