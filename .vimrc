@@ -56,8 +56,7 @@ nnoremap <leader>ya <esc>:%y+<CR>
 nnoremap <leader>v <esc>:tabe ~/.vimrc <CR>
 
 " File explorer
-inoremap <c-f> <Esc>:Lex<cr>:vertical resize 30<cr>
-nnoremap <c-f> <Esc>:Lex<cr>:vertical resize 30<cr>
+nnoremap <C-f> :NERDTreeToggle<CR>
 
 " AUTOCOMMANDS
 
@@ -66,13 +65,6 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " Remove trailing whitespace on save
 autocmd BufWritePre * %s/\s\+$//e
-
-" NETRW
-let g:netrw_banner = 0
-let g:netrw_liststyle = 3
-let g:netrw_browse_split = 4
-let g:netrw_altv = 1
-let g:netrw_winsize = 20
 
 " ABBREVIATIONS
 cnoreabbrev W! w!
@@ -83,3 +75,9 @@ cnoreabbrev wQ wq
 cnoreabbrev W w
 cnoreabbrev Q q
 cnoreabbrev c colorscheme
+
+" PLUGINS
+call plug#begin()
+Plug 'preservim/nerdtree' | Plug 'ryanoasis/vim-devicons'
+call plug#end()
+
