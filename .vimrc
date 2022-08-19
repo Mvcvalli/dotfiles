@@ -15,9 +15,6 @@ set equalalways			   " When splitting, always have the windows be 50% the size.
 set splitbelow splitright          " Splits open at the bottom and right.
 set nobackup nowritebackup         " Disable backups.
 set noswapfile 		           " Disable swap files.
-set termguicolors 		   " Set term gui colors (most terminals support this)
-set t_Co=256                       " Set if term supports 256 colors.
-set ttyfast			   " Smoother Vim for some terminals.
 set wildoptions=pum		   " Vertical wildmenu
 
 " KEYBINDINGS
@@ -50,10 +47,10 @@ nnoremap <leader>n :set number<CR>
 map <leader>s :setlocal spell! spelllang=en_nz<CR>
 
 " Copies the contents of the entire file to clipboard
-nnoremap <leader>ya <esc>:%y+<CR>
+nnoremap <C-y> <esc>:%y+<CR>
 
 " Open .vimrc in a new tab
-nnoremap <leader>v <esc>:tabe ~/.vimrc <CR>
+nnoremap <C-v> <esc>:tabe ~/.vimrc <CR>
 
 " File explorer
 nnoremap <C-f> :NERDTreeToggle<CR>
@@ -82,7 +79,7 @@ cnoreabbrev c colorscheme
 " PLUGINS
 call plug#begin()
 Plug 'preservim/nerdtree' | Plug 'ryanoasis/vim-devicons' | Plug 'jiangmiao/auto-pairs'
-Plug 'junegunn/goyo.vim'  | Plug 'junegunn/limelight.vim'
+Plug 'junegunn/goyo.vim'  | Plug 'junegunn/limelight.vim' | Plug 'lilydjwg/colorizer'
 call plug#end()
 
 " GOYO
