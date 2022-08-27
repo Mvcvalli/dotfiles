@@ -1,0 +1,11 @@
+# Window Customization
+window:
+  opacity: .8
+  decorations: none
+
+# Font Customization
+font:
+  normal:
+    family: Iosevka Nerd Font
+    style: Regular
+    size: 13
