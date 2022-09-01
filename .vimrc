@@ -63,7 +63,7 @@ nnoremap <leader><ENTER> :Goyo<CR>
 " Disable automatic commenting on newline:
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
-" Remove trailing whitespace on save
+" Automatically deletes all tralling whitespace on save.
 autocmd BufWritePre * %s/\s\+$//e
 
 " ABBREVIATIONS
