@@ -1,0 +1,17 @@
+# Window Customization
+window:
+  opacity: .8
+  decorations: none
+
+# Font Customization
+font:
+  normal:
+    family: Iosevka Nerd Font
+    style: Regular
+    size: 13
+
+
+key_bindings:
+    - { key: C, mods: Control|Shift, action: Copy       }
+    - { key: V, mods: Control|Shift, action: Paste      }
+    - { key: N, mods: Control, action: SpawnNewInstance }
