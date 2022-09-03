@@ -1,7 +1,5 @@
 " GENERAL
-filetype plugin on                 " Enable filetype plugins.
-filetype indent on                 " Enable filetype plugins.
-syntax enable	                   " Enable syntax highlighting.
+
 set encoding=utf-8   	           " UTF-8 all the things.
 set wildmenu	                   " Turn on wildmenu.
 set mouse=a	                   " Enable mouse usage.
@@ -16,6 +14,8 @@ set splitbelow splitright          " Splits open at the bottom and right.
 set nobackup nowritebackup         " Disable backups.
 set noswapfile 		           " Disable swap files.
 set wildoptions=pum		   " Vertical wildmenu
+
+filetype plugin on | filetype indent on | syntax enable
 
 " KEYBINDINGS
 
