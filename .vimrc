@@ -63,6 +63,9 @@ nnoremap <leader><ENTER> :Goyo<CR>
 " Disable automatic commenting on newline:
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
+" Fixes transparency issues W/ colorschemes
+autocmd VimEnter * TransparentDisable
+
 " Automatically deletes all tralling whitespace on save.
 autocmd BufWritePre * %s/\s\+$//e
 
@@ -78,10 +81,12 @@ cnoreabbrev c colorscheme
 
 " PLUGINS
 call plug#begin()
-Plug 'preservim/nerdtree' | Plug 'ryanoasis/vim-devicons' | Plug 'jiangmiao/auto-pairs'
-Plug 'junegunn/goyo.vim'  | Plug 'junegunn/limelight.vim' | Plug 'lilydjwg/colorizer'
+Plug 'preservim/nerdtree' | Plug 'ryanoasis/vim-devicons' | Plug 'jiangmiao/auto-pairs' | Plug 'tribela/vim-transparent'
+Plug 'junegunn/goyo.vim'  | Plug 'junegunn/limelight.vim' | Plug 'lilydjwg/colorizer'   | Plug 'pgdouyon/vim-yin-yang'
 call plug#end()
 
 " GOYO
 autocmd! User GoyoEnter Limelight | autocmd! User GoyoLeave Limelight!
 let g:limelight_conceal_ctermfg = 240 | let g:limelight_conceal_guifg = '#777777'
+
+colorscheme yin
