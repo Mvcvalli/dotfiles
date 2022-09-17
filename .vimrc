@@ -14,6 +14,8 @@ set splitbelow splitright          " Splits open at the bottom and right.
 set nobackup nowritebackup         " Disable backups.
 set noswapfile 		           " Disable swap files.
 set wildoptions=pum		   " Vertical wildmenu
+set incsearch hlsearch             " Find as you type search + Highlight search terms.
+set ignorecase                 	   " Case insensitive search.
 
 filetype plugin on | filetype indent on | syntax enable
 
