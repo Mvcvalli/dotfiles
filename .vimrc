@@ -91,4 +91,9 @@ call plug#end()
 autocmd! User GoyoEnter Limelight | autocmd! User GoyoLeave Limelight!
 let g:limelight_conceal_ctermfg = 240 | let g:limelight_conceal_guifg = '#777777'
 
+" NERDTree
+let NERDTreeShowHidden=1 " Show hidden files.
+let NERDTreeQuitOnOpen=1 " Automaticly close NERDtree after a file has been opened.
+let NERDTreeMinimalUI =1 | let NERDTreeDirArrows =1 " Aesthetics.
+
 colorscheme yin
