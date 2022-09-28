@@ -43,7 +43,7 @@ vnoremap ; :
 vnoremap : ;
 
 " Toogle line numbers
-nnoremap <leader>n :set number<CR>
+nnoremap <silent> <leader>n :set number<CR>
 
 " Toggle spell checking
 map <leader>s :setlocal spell! spelllang=en_nz<CR>
@@ -52,10 +52,10 @@ map <leader>s :setlocal spell! spelllang=en_nz<CR>
 nnoremap <C-y> <esc>:%y+<CR>
 
 " Open .vimrc in a new tab
-nnoremap <C-v> <esc>:tabe ~/.vimrc <CR>
+nnoremap <silent> <C-v> <esc>:tabe ~/.vimrc <CR>
 
 " File explorer
-nnoremap <C-f> :NERDTreeToggle<CR>
+nnoremap <silent> <C-f> :NERDTreeToggle<CR>
 
 " Toggle Goyo
 nnoremap <leader><ENTER> :Goyo<CR>
