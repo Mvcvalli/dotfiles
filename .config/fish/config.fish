@@ -2,6 +2,8 @@
 set fish_greeting
 set -x EDITOR nvim
 set -x VISUAL vim
+set -x MYVIMRC $HOME/.config/vim/.vimrc
+set -x VIMINIT source $MYVIMRC 
 
 # Manpager
 set -x MANPAGER '/bin/bash -c "vim -MRn -c \"set buftype=nofile showtabline=0 ft=man ts=8 nomod nolist norelativenumber nonu noma\" -c \"normal L\" -c \"nmap q :qa<CR>\"</dev/tty <(col -b)"'
