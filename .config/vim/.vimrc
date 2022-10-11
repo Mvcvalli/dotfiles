@@ -52,7 +52,7 @@ map <leader>s :setlocal spell! spelllang=en_nz<CR>
 nnoremap <C-y> <esc>:%y+<CR>
 
 " Open .vimrc in a new tab
-nnoremap <silent> <C-v> <esc>:tabe ~/.vimrc <CR>
+nnoremap <silent> <C-v> <esc>:tabe ~/.config/vim/.vimrc<CR>
 
 " File explorer
 nnoremap <silent> <C-f> :NERDTreeToggle<CR>
@@ -72,14 +72,7 @@ autocmd VimEnter * TransparentDisable
 autocmd BufWritePre * %s/\s\+$//e
 
 " ABBREVIATIONS
-cnoreabbrev W! w!
-cnoreabbrev Q! q!
-cnoreabbrev WQ wq
-cnoreabbrev Wq wq
-cnoreabbrev wQ wq
-cnoreabbrev W w
-cnoreabbrev Q q
-cnoreabbrev c colorscheme
+source $HOME/.vim/abbreviations.vim
 
 " PLUGINS
 call plug#begin()
