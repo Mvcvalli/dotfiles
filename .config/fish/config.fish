@@ -8,12 +8,26 @@ set -x VIMINIT source $MYVIMRC
 # Manpager
 set -x MANPAGER '/bin/bash -c "vim -MRn -c \"set buftype=nofile showtabline=0 ft=man ts=8 nomod nolist norelativenumber nonu noma\" -c \"normal L\" -c \"nmap q :qa<CR>\"</dev/tty <(col -b)"'
 
+# Vim Keybindings
+function fish_user_key_bindings
+  fish_vi_key_bindings
+end
+
 # Prompt
 function fish_prompt
-    set_color $fish_color_cwd
-    echo -n (basename $PWD)
-    set_color normal
-    echo -n ' ) '
+	set_color red --bold
+	printf "["
+	set_color yellow
+	printf "%s" "mason"
+	set_color green
+	printf "@"
+	set_color blue
+	printf "%s" "art"
+	set_color magenta
+	printf " %s" "$PWD"
+	set_color red
+	printf "] "
+	set_color normal
 end
 
 # Colors
@@ -72,10 +86,7 @@ alias ls="exa -a --color=always --icons --group-directories-first"
 alias ll="exa -la --color=always --icons --group-directories-first"
 alias tree="exa -a --color=always --icons --group-directories-first -T"
 
-alias .mdots="git clone --depth 1 https://github.com/Mvcvalli/dotfiles.git"
-alias .ldots="git clone --depth 1 https://github.com/Mvcvalli/.dotfiles.git"
-alias .nvim="git clone --depth 1 https://github.com/Mvcvalli/nvim.git" 
-alias .zsh="git clone --depth 1 https://github.com/Mvcvalli/zsh.git"
+alias .dots="git clone --depth 1 https://github.com/Mvcvalli/dotfiles.git"
 alias .scripts="git clone --depth 1 https://github.com/Mvcvalli/scripts.git"
 
 alias show="defaults write com.apple.finder AppleShowAllFiles YES && killall Finder"
