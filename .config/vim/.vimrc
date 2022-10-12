@@ -6,7 +6,7 @@ set mouse=a	                   " Enable mouse usage.
 set linebreak                      " Avoid wrapping a line in the middle of a word.
 set clipboard^=unnamed,unnamedplus " Use system clipboard.
 set background=dark                " Use dark theme.
-set viminfo=""		           " Disable .viminfo
+set viminfo="$HOME/.config/vim"    " Disable .viminfo
 set virtualedit=onemore            " Allow for cursor beyond last character.
 set shortmess+=I                   " No intro when starting Vim
 set equalalways			   " When splitting, always have the windows be 50% the size.
