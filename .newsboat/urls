@@ -9,7 +9,7 @@ https://news.itsfoss.com/feed/              "News - It's Foss"
 http://static.fsf.org/fsforg/rss/news.xml   "FSF - News"     "~FSF News"
 http://static.fsf.org/fsforg/rss/blogs.xml  "FSF - Blogs"    "~FSF Blogs"
 http://static.fsf.org/fsforg/rss/jobs.xml   "FSF - Jobs"     "~FSF Jobs"
-https://planet.gnu.org/rss20.xml            "FSF - GNU       "~Planet GNU"
+https://planet.gnu.org/rss20.xml            "FSF - GNU"      "~Planet GNU"
 http://www.gnu.org/rss/whatsnew.rss         "FSF - GNU News" "~GNU News"
 https://ryf.fsf.org/news/rss.xml            "FSF - Respects Your Freedom Certification" "~RYF News"
 
