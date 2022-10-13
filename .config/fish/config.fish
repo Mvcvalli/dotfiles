@@ -93,3 +93,4 @@ alias show="defaults write com.apple.finder AppleShowAllFiles YES && killall Fin
 alias hide="defaults write com.apple.finder AppleShowAllFiles NO && killall Finder"
 
 alias update="~/.local/scripts/macOS/update.sh"
+alias weathernz="curl http://wttr.in/New_Zealand"
