@@ -8,11 +8,6 @@ set -x VIMINIT source $MYVIMRC
 # Manpager
 set -x MANPAGER '/bin/bash -c "vim -MRn -c \"set buftype=nofile showtabline=0 ft=man ts=8 nomod nolist norelativenumber nonu noma\" -c \"normal L\" -c \"nmap q :qa<CR>\"</dev/tty <(col -b)"'
 
-# Vim Keybindings
-function fish_user_key_bindings
-  fish_vi_key_bindings
-end
-
 # Prompt
 function fish_prompt
 	set_color red --bold
@@ -87,7 +82,7 @@ alias ll="exa -la --color=always --icons --group-directories-first"
 alias tree="exa -a --color=always --icons --group-directories-first -T"
 
 alias .dots="git clone --depth 1 https://github.com/Mvcvalli/dotfiles.git"
-alias .scripts="git clone --depth 1 https://github.com/Mvcvalli/scripts.git"
+alias .scripts="cd .local && git clone --depth 1 https://github.com/Mvcvalli/scripts.git && cd ~"
 
 alias show="defaults write com.apple.finder AppleShowAllFiles YES && killall Finder"
 alias hide="defaults write com.apple.finder AppleShowAllFiles NO && killall Finder"
