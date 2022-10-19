@@ -1,6 +1,6 @@
 # Exports
 set fish_greeting
-set -x EDITOR nvim
+set -x EDITOR vim
 set -x VISUAL vim
 set -x MYVIMRC $HOME/.config/vim/.vimrc
 set -x VIMINIT source $MYVIMRC 
@@ -88,4 +88,4 @@ alias show="defaults write com.apple.finder AppleShowAllFiles YES && killall Fin
 alias hide="defaults write com.apple.finder AppleShowAllFiles NO && killall Finder"
 
 alias update="~/.local/scripts/macOS/update.sh"
-alias weather='curl http://wttr.in'
+alias weather="curl http://wttr.in"
