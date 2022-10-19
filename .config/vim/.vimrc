@@ -1,22 +1,21 @@
 " GENERAL
-
-set encoding=utf-8   	           " UTF-8 all the things.
-set wildmenu	                   " Turn on wildmenu.
-set mouse=a	                   " Enable mouse usage.
-set linebreak                      " Avoid wrapping a line in the middle of a word.
-set clipboard^=unnamed,unnamedplus " Use system clipboard.
-set background=dark                " Use dark theme.
-set viminfo="$HOME/.config/vim"    " Disable .viminfo
-set virtualedit=onemore            " Allow for cursor beyond last character.
-set shortmess+=I                   " No intro when starting Vim
-set equalalways			   " When splitting, always have the windows be 50% the size.
-set splitbelow splitright          " Splits open at the bottom and right.
-set nobackup nowritebackup         " Disable backups.
-set noswapfile 		           " Disable swap files.
-set wildoptions=pum		   " Vertical wildmenu
-set incsearch hlsearch             " Find as you type search + Highlight search terms.
-set ignorecase                 	   " Case insensitive search.
-
+set encoding=utf-8   	                               " UTF-8 all the things.
+set wildmenu	                                       " Turn on wildmenu.
+set mouse=a	                                       " Enable mouse usage.
+set linebreak                                          " Avoid wrapping a line in the middle of a word.
+set clipboard^=unnamed,unnamedplus 		       " Use system clipboard.
+set background=dark                		       " Use dark theme.
+set viminfo=					       " Disable .viminfo
+set virtualedit=onemore            		       " Allow for cursor beyond last character.
+set shortmess+=I                   		       " No intro when starting Vim
+set equalalways			   		       " When splitting, always have the windows be 50% the size.
+set splitbelow splitright          		       " Splits open at the bottom and right.
+set nobackup nowritebackup noswapfile         	       " Disable backups + swap files
+set wildmenu wildoptions=pum		   	       " Enable wildmenu + vertical wildmenu.
+set incsearch hlsearch             		       " Find as you type search + Highlight search terms.
+set ignorecase                 	   		       " Case insensitive search.
+set gdefault      		   		       " Never have to type /g at the end of search / replace again
+set spellfile=$HOME/.vim/spell/.vim-spell-en.utf-8.add " Set spellfile to location that is guaranteed to exist, can be symlinked to
 filetype plugin on | filetype indent on | syntax enable
 
 " KEYBINDINGS
@@ -46,7 +45,7 @@ vnoremap : ;
 nnoremap <silent> <leader>n :set number<CR>
 
 " Toggle spell checking
-map <leader>s :setlocal spell! spelllang=en_nz<CR>
+nnoremap <silent> <leader>s :set spell spelllang=en_nz<CR>
 
 " Copies the contents of the entire file to clipboard
 nnoremap <C-y> <esc>:%y+<CR>
