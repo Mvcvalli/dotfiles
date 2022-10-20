@@ -59,6 +59,9 @@ nnoremap <silent> <C-f> :NERDTreeToggle<CR>
 " Toggle Goyo
 nnoremap <leader><ENTER> :Goyo<CR>
 
+" Toggle spell checking
+nnoremap <silent> <C-s> :set spell spelllang=en_nz<CR>
+
 " AUTOCOMMANDS
 
 " Disable automatic commenting on newline:
