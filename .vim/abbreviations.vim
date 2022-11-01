@@ -23,6 +23,7 @@ iabbrev searx     Searx
 iabbrev peertube  PeerTube
 
 iabbrev sec  second
+iabbrev secs seconds
 iabbrev min  minute
 iabbrev mins minutes
 
@@ -37,6 +38,7 @@ iabbrev Xmas   Christmas
 iabbrev xmas   Christmas
 
 iabbrev bdsm BDSM
+iabbrev dd Domestic Discipline
 iabbrev dom  Dominant
 iabbrev doms Dominant’s
 iabbrev sub  Submissive
@@ -46,6 +48,9 @@ iabbrev imo in my opinion
 iabbrev tbh to be honest
 iabbrev idk I don’t know
 iabbrev dm direct message
+iabbrev nvm never mind
+iabbrev ofc of course
+iabbrev abt about
 
 iabbrev monday    Monday
 iabbrev tuesday   Tuesday
