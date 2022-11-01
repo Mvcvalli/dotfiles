@@ -68,7 +68,7 @@ nnoremap <silent> <C-s> :set spell spelllang=en_nz<CR>
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " Fixes transparency issues W/ colorschemes
-autocmd VimEnter * TransparentDisable
+" autocmd VimEnter * TransparentDisable
 
 " Automatically deletes all tralling whitespace on save.
 autocmd BufWritePre * %s/\s\+$//e
@@ -79,8 +79,7 @@ source $HOME/.vim/abbreviations.vim
 " PLUGINS
 call plug#begin()
 Plug 'preservim/nerdtree' | Plug 'ryanoasis/vim-devicons' | Plug 'jiangmiao/auto-pairs' | Plug 'tribela/vim-transparent'
-Plug 'junegunn/goyo.vim'  | Plug 'junegunn/limelight.vim' | Plug 'lilydjwg/colorizer'   | Plug 'pgdouyon/vim-yin-yang'
-call plug#end()
+Plug 'junegunn/goyo.vim'  | Plug 'junegunn/limelight.vim' | Plug 'lilydjwg/colorizer'   | call plug#end()
 
 " GOYO
 autocmd! User GoyoEnter Limelight | autocmd! User GoyoLeave Limelight!
@@ -90,5 +89,3 @@ let g:limelight_conceal_ctermfg = 240 | let g:limelight_conceal_guifg = '#777777
 let NERDTreeShowHidden=1 " Show hidden files.
 let NERDTreeQuitOnOpen=1 " Automaticly close NERDtree after a file has been opened.
 let NERDTreeMinimalUI =1 | let NERDTreeDirArrows =1 " Aesthetics.
-
-colorscheme yin
