@@ -76,6 +76,9 @@ autocmd BufWritePre * %s/\s\+$//e
 " ABBREVIATIONS
 source $HOME/.vim/abbreviations.vim
 
+" VIM-PLUG INSTALL
+source $HOME/.vim/plug.vim
+
 " PLUGINS
 call plug#begin()
 Plug 'preservim/nerdtree' | Plug 'ryanoasis/vim-devicons' | Plug 'jiangmiao/auto-pairs' | Plug 'tribela/vim-transparent'
