@@ -88,6 +88,7 @@ alias show="defaults write com.apple.finder AppleShowAllFiles YES && killall Fin
 alias hide="defaults write com.apple.finder AppleShowAllFiles NO && killall Finder"
 
 alias update="~/.local/scripts/macOS/update.sh"
+alias cleanup="~/.local/scripts/macOS/cleanup.sh"
 alias ginstall="~/.local/scripts/macOS/git-install.sh"
 alias invim="~/.local/scripts/nvim/nvim-config-install.sh"
 alias unvim="~/.local/scripts/nvim/uninstall-nvim.sh"
