@@ -53,6 +53,14 @@ set -U fish_pager_color_completion normal
 set -U fish_pager_color_description brblack
 set -U fish_pager_color_selected_background --reverse
 
+# Automatically install fundle (package manager)
+if not functions -q fundle; eval (curl -sfL https://git.io/fundle-install); end
+
+# Plugins
+fundle plugin "edc/bass"
+fundle plugin "jorgebucaran/autopair.fish"
+fundle init
+
 # Abbreviations
 abbr clone "git clone --depth 1"
 abbr m     "man"
@@ -80,9 +88,6 @@ alias v="$EDITOR"
 alias ls="exa -a --color=always --icons --group-directories-first"
 alias ll="exa -la --color=always --icons --group-directories-first"
 alias tree="exa -a --color=always --icons --group-directories-first -T"
-
-alias .dots="git clone --depth 1 https://github.com/Mvcvalli/dotfiles.git"
-alias .scripts="cd .local && git clone --depth 1 https://github.com/Mvcvalli/scripts.git && cd ~"
 
 alias show="defaults write com.apple.finder AppleShowAllFiles YES && killall Finder"
 alias hide="defaults write com.apple.finder AppleShowAllFiles NO && killall Finder"
