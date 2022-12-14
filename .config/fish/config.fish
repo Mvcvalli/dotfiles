@@ -43,7 +43,12 @@ abbr cd..  "cd .."
 # Aliases 
 alias q="exit"
 alias c="clear"
-alias rr="rm -rf"
+alias sudo="sudo"
+alias cp="cp -iv"
+alias mv="mv -iv"
+alias mkdir="mkdir -pv"
+alias rr="rm -rf -vI"
+alias sdn="shutdown -h now"
 
 alias .h="cd $HOME"
 alias .1="cd .."
