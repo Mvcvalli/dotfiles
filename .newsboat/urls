@@ -24,7 +24,8 @@ https://stallman.org//rss/rss.xml           "People - Richard Stallman" "~Richar
 https://blog.tomasino.org/index.xml         "People - James Tomasino"   "~James Tomasino"
 https://www.rossmanngroup.com/feed/         "People - Louis Rossmann"   "~Louis Rossmann"
 https://jacobwsmith.xyz/rss.xml             "People - Jacob Smith"      "~Jacob Smith"
-https://aperture.gg/blogs/the-universe.atom "People - Aperture          "~Aperture"
+https://ericmurphy.xyz/index.xml            "People - Eric Murphy"      "~Eric Murphy"  
+https://aperture.gg/blogs/the-universe.atom "People - Aperture"         "~Aperture"
 
 # Podcasts
 https://notrelated.xyz/rss                  "Podcast - Not Related!"    "~Not Related!"
@@ -32,8 +33,8 @@ https://anchor.fm/s/149fd51c/podcast/rss    "Podcast - Tech Over Tea"   "~Tech O
 https://feeds.megaphone.fm/darknetdiaries   "Podcast - Darknet Diaries" "~Darknet Diaries"
 
 # NSFW
-https://domsubliving.com/feed/              "Kink - Dom Sub Living "~Dom Sub Living"
-https://domesticdisciplineonline.com/feed/  "Kink - Domestic Discipline Online "~Domestic Discipline Online"
+https://domsubliving.com/feed/              "Kink - Dom Sub Living" "~Dom Sub Living"
+https://domesticdisciplineonline.com/feed/  "Kink - Domestic Discipline Online" "~Domestic Discipline Online"
 
 # PeerTube
 https://lukesmith.xyz/peertube              "PeerTube - Luke Smith"     "~PeerTube - Luke Smith"
