@@ -1,0 +1,51 @@
+# Basic Settings
+set hidden true
+set ignorecase true
+set icons ~/.config/lf/icons
+set preview ~/.config/lf/preview
+# Delete a file.
+cmd delete ${{
+	clear; tput cup $(($(tput lines)/3)); tput bold
+	set -f
+	printf "%s\n\t" "$fx"
+	printf "delete?[y/N]"
+	read ans
+	[ $ans = "y" ] && rm -rf -- $fx
+}}
+
+# Making a directory.
+cmd mkdir ${{
+  printf "Directory Name: "
+  read ans
+  mkdir $ans
+}}
+
+# Making a file.
+cmd mkfile ${{
+  printf "File Name: "
+  read ans
+  $EDITOR $ans
+}}
+
+# Remove some defaults bindings.
+map m
+map d
+
+# Basic Functions.
+map d delete
+map md mkdir
+map mf mkfile
+map ch chmod
+
+# Bindings.
+map y copy
+map p paste
+map x cut
+map a rename
+
+# Movement
+map gd cd ~/documents
+map gD cd ~/downloads
+map gp cd ~/pictures
+map gc cd ~/.config
+map gs cd ~/.local/scripts
