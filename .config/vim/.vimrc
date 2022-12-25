@@ -8,7 +8,7 @@ set background=dark
 set viminfo=""
 set virtualedit=onemore
 set shortmess+=I
-set wildmenu
+set wildmenu wildoptions=pum
 set equalalways splitbelow splitright
 set nobackup nowritebackup noswapfile
 set incsearch hlsearch ignorecase smartcase wildignorecase
